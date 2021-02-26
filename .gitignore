@@ -1,0 +1,7 @@
+# Files
+.DS_Store
+*.npz
+
+# Folders
+env/
+**/__pycache__/
