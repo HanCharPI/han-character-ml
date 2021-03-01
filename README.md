@@ -22,3 +22,5 @@ python read_kanji.py
 ```
 python generate_training_data.py
 ```
+
+# Utilization
