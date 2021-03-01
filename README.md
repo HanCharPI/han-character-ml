@@ -1,6 +1,11 @@
 # han-character-ml
 Repository to create han character ML
 
+# Content
+- Instalation
+- Utilization
+
+
 # Instalation
 ## Download Kanji image dataset (non-commercial propose):
 Link: http://etlcdb.db.aist.go.jp/
