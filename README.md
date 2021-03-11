@@ -2,8 +2,13 @@
 Repository to create han character ML
 
 # Content
+- Used model
 - Instalation
 - Utilization
+
+# Used Model
+## CNN (Convolutional Neural Network)
+
 
 
 # Instalation
