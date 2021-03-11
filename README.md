@@ -22,3 +22,11 @@ python read_kanji.py
 ```
 python generate_training_data.py
 ```
+
+# Utilization
+## Entry data
+The ML model requires an image wiht a format of 48x48 and color black kanji as an entry parameter
+<br/>![Sample 1](sample_images/sample1.png) ![Sample 2](sample_images/sample2.png)
+
+## Return value
+The ML model after proccessing the data it's return and array of images with the same format as the entry data
