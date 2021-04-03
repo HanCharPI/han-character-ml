@@ -1,7 +1,6 @@
 import skimage.transform
 import numpy as np
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
 
 kanji = 881
 rows = 48
@@ -40,13 +39,3 @@ np.savez_compressed("kanji_train_labels.npz", train_labels)
 np.savez_compressed("kanji_test_images.npz", test_images)
 np.savez_compressed("kanji_test_labels.npz", test_labels)
 print("Finished compresion")
-
-print("Starting visualization")
-plt.figure(figsize=(6,6)).patch.set_facecolor('#000000')
-for i in range(25):
-    plt.subplot(5,5,i+1)
-    plt.xticks([])
-    plt.yticks([])
-    plt.grid(False)
-    plt.imshow(train_images[i], cmap=plt.cm.binary)
-plt.show()
