@@ -22,4 +22,4 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print("Test Accuracy: ", test_acc)
 
 # Lastest accuracy:
-#  - 87% - 0.8693116903305054
+#  - 98% - 0.9860637187957764
