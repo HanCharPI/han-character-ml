@@ -44,7 +44,7 @@ model = keras.Sequential([
   keras.layers.Flatten(),
   keras.layers.Dropout(0.5),
   keras.layers.Dense(2048, activation='relu'),
-  keras.layers.Dense(881, activation="softmax")
+  keras.layers.Dense(879, activation="softmax")
 ])
 
 model.compile(optimizer='adam', loss="sparse_categorical_crossentropy", metrics=['accuracy'])
