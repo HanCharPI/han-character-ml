@@ -2,8 +2,12 @@
 Repository to create han character ML
 
 # Content
+- Used model
 - Instalation
 - Input and Output
+
+# Used Model
+## CNN (Convolutional Neural Network)
 
 # Instalation
 ## Download Kanji image dataset (non-commercial propose):
