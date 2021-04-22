@@ -25,7 +25,7 @@ def kanji_recognizer():
     img_string = params["image-base64"]
     x = data_process.process(img_string)
     pred = model.predict(x)
-    result = data_process.get_top(pred, 3)
+    result = data_process.get_top(pred, 8)
     data["predictioin"] = data_process.get_characters(result)
     data["success"] = True
   
