@@ -21,12 +21,15 @@ def kanji_recognizer():
   if (params == None):
       params = flask.request.args
 
-  if(params != None):
-    img_string = params["image-base64"]
-    x = data_process.process(img_string)
-    pred = model.predict(x)
-    result = data_process.get_top(pred, 8)
-    data["predictioin"] = data_process.get_characters(result)
-    data["success"] = True
+  try:
+    if(params != None):
+      img_string = params["image-base64"]
+      x = data_process.process(img_string)
+      pred = model.predict(x)
+      result = data_process.get_top(pred, 8)
+      data["predictioin"] = data_process.get_characters(result)
+      data["success"] = True
+  except Exception as e:
+    data["error"] = str(e)
   
   return flask.jsonify(data)
