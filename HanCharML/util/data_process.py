@@ -15,6 +15,7 @@ def process(img_base64: str):
   image_np = np.array(image)
   image_np = image_np/255.0
   image_np = skimage.transform.resize(image_np, (48, 48, 1))
+  
   return image_np.reshape((1, 48, 48, 1))
 
 def get_characters(indexes: list):
