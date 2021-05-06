@@ -27,7 +27,7 @@ def kanji_recognizer():
       x = data_process.process(img_string)
       pred = model.predict(x)
       result = data_process.get_top(pred, 8)
-      data["predictioin"] = data_process.get_characters(result)
+      data["prediction"] = data_process.get_characters(result)
       data["success"] = True
   except Exception as e:
     data["error"] = str(e)
